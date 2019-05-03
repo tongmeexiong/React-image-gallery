@@ -1,4 +1,5 @@
 import React from 'react';
+import GalleryListItem from '../GalleryListItem/GalleryListItem'
 
 class GalleryList extends React.Component {
     render() {
@@ -6,11 +7,7 @@ class GalleryList extends React.Component {
             <ul>
                 {this.props.imageList.map((image) => {
                     return (
-                        <div key={image.id}>
-                        <ol> <img src={image.path}/> </ol>
-                        <ol>{image.description}</ol>
-                        <ol >{image.likes}</ol>
-                        </div>
+                        <GalleryListItem key={image.id} image={image}/>
                    )
                 })}
             </ul>
