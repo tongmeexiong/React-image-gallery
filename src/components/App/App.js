@@ -37,9 +37,17 @@ componentDidMount(){
     // }
 
 
-clickedLike = ()=>{
-  console.log('I clicked like Button');
+clickedLikeButton = (likes)=>{
+  console.log('I clicked like Button', likes);
+// axios({
+//   method: 'PUT',
+//   url: `/like/${id}`
+// }).then ((response)=>{
+//   console.log('PUT', response);
   
+// }).catch((err)=>{
+//   console.log('Error in PUT', response);
+// })
 }
 
 
@@ -53,7 +61,7 @@ clickedLike = ()=>{
         <p>Gallery goes here</p>
         {/* <img src="images/goat_small.jpg"/> */}
         <GalleryList imageList={this.state.image}
-        like={this.clickedLike}/>
+          buttonLikes={this.clickedLikeButton}/>
       </div>
     );
   }
