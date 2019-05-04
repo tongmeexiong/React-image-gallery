@@ -7,7 +7,6 @@ class GalleryList extends React.Component {
             <ul>
                 {this.props.imageList.map((image) => {
                     return (
-
                             <GalleryListItem key={image.id} image={image} likes={this.props.buttonLikes}/>
                    )
                 })}
