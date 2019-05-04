@@ -37,18 +37,18 @@ componentDidMount(){
     // }
 
 
-clickedLikeButton = (likes)=>{
-  console.log('I clicked like Button', likes);
-// axios({
-//   method: 'PUT',
-//   url: `/like/${id}`
-// }).then ((response)=>{
-//   console.log('PUT', response);
-  
-// }).catch((err)=>{
-//   console.log('Error in PUT', response);
-// })
-}
+  clickedLikeButton = (id) => {
+    console.log('I clicked like Button', id);
+    axios({
+      method: 'PUT',
+      url: `/gallery/like/${id}`
+    }).then((response) => {
+      console.log('response from PUT request:', response.data);
+      this.getPhoto();
+    }).catch((error) => {
+      console.log('error in PUT request:', error);
+    });
+  }
 
 
   render() {

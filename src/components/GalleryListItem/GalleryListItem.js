@@ -7,7 +7,7 @@ class GalleryListItem extends React.Component{
         return(
             <div>
                 <img src={this.props.image.path} /> 
-                <button onClick={()=>this.props.likes(this.props.image.likes)}> LIKE</button>
+                <button onClick={()=>this.props.likes(this.props.image.id)}> LIKE</button>
                 {this.props.image.description}
                 {this.props.image.likes}
             </div>
