@@ -37,7 +37,7 @@ componentDidMount(){
     // }
 
 
-clickedLike = (event)=>{
+clickedLike = ()=>{
   console.log('I clicked like Button');
   
 }
