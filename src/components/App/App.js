@@ -68,7 +68,6 @@ componentDidMount(){
         </header>
         <Profile profilePicture={this.state.profile} />
         <br/>
-        <p>Gallery goes here</p>
         {/* <img src="images/goat_small.jpg"/> */}
        <GalleryList imageList={this.state.image}
           buttonLikes={this.clickedLikeButton}/> 

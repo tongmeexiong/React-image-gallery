@@ -29,7 +29,7 @@ class GalleryListItem extends React.Component {
         else {
             photoToChange = 
                 <div className= "imageChange">
-                <p onClick={this.handleClick} ><img src={this.props.image.path} /></p>
+                <p onClick={this.handleClick} ><img className ="lifeImages" src={this.props.image.path} /></p>
                 <p>{this.props.image.likes}</p>
                 <p> <button onClick={() => this.props.likes(this.props.image.id)}> LIKE</button> </p> 
                 </div>
