@@ -67,8 +67,19 @@ componentDidMount(){
           <h1 className="App-title">Gallery of my life</h1>
         </header>
         <Profile profilePicture={this.state.profile} />
+        <section className="bioInfo">
+          <div>
+          <h2> Tongmee Xiong</h2>
+          </div>
+          
+          <div>
+            <p> I am an Adventuer, Thrill Seeker, JiuJitsu Martial Artist, and much more!</p>
+          </div>
+        </section>
         <br/>
         {/* <img src="images/goat_small.jpg"/> */}
+        <hr></hr>
+
        <GalleryList imageList={this.state.image}
           buttonLikes={this.clickedLikeButton}/> 
       </div>

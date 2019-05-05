@@ -5,6 +5,9 @@ const galleryItems = [
     { id: 4, path: 'images/firstcliff.jpg', description: 'Fist Cliff dive before I knew how to swim', likes: 0 },
     { id: 5, path: 'images/canada.jpg', description: 'Canada Day', likes: 0 },
     { id: 6, path: 'images/dive.jpg', description: 'Fun fact: I can free dive up to 30ft deep in one breathe', likes: 0 },
+    { id: 7, path: 'images/crazy.jpg', description: 'Fist Cliff dive before I knew how to swim', likes: 0 },
+    { id: 8, path: 'images/climb.jpg', description: 'Canada Day', likes: 0 },
+    { id: 9, path: 'images/jits.jpg', description: 'Fun fact: I can free dive up to 30ft deep in one breathe', likes: 0 },
 
 ];
 module.exports = galleryItems;

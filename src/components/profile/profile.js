@@ -8,7 +8,7 @@ class profile extends React.Component {
                 {this.props.profilePicture.map((image) => {
                     return (
                         <div key= { image.id } className= "userPicDiv">
-                        <p > <img className="userPic" src={image.path}/> </p>
+                            <p ><img src={image.path} alt="my face"/> </p>
                         </div>
                     )
                 })}
