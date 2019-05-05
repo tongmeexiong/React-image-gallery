@@ -64,7 +64,7 @@ componentDidMount(){
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of my life</h1>
+          <h1 className="App-title">“Live in the sunshine, swim the sea, drink the wild air.” – Ralph Waldo Emerson</h1>
         </header>
         <Profile profilePicture={this.state.profile} />
         <section className="bioInfo">

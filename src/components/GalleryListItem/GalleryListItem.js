@@ -20,7 +20,7 @@ class GalleryListItem extends React.Component {
             photoToChange = 
                 <div className= "descriptionChange">
                 <p className = "description" onClick={this.handleClick}> {this.props.image.description} </p>
-                <p> {this.props.image.likes}</p>
+                <p> {this.props.image.likes} Baconians liked this!</p>
                 <p> <button onClick={() => this.props.likes(this.props.image.id)}> LIKE</button></p>
                 </div >
 
@@ -30,7 +30,7 @@ class GalleryListItem extends React.Component {
             photoToChange = 
                 <div className= "imageChange">
                 <p onClick={this.handleClick} ><img className="lifeImages" src={this.props.image.path} alt="my gallery"/></p>
-                <p>{this.props.image.likes}</p>
+                <p>{this.props.image.likes} Baconians liked this!</p>
                 <p> <button onClick={() => this.props.likes(this.props.image.id)}> LIKE</button> </p> 
                 </div>
         }

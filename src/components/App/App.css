@@ -11,6 +11,7 @@
 
 .App-title {
   font-size: 1.5em;
+  font-family: fantasy
 }
 
 .App-intro {
@@ -79,7 +80,8 @@ ul {
 }
 
 p.description {
-  background-color: slateblue;
+  background-color: gray;
+  text-align: center;
 }
 
 section.bioInfo {
@@ -95,3 +97,7 @@ hr {
     margin-bottom: -110px;
     margin-right: 235px;
 }
+
+
+
+
