@@ -2,15 +2,18 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios'
 import GalleryList from '../GalleryList/GalleryList'
+import Profile from '../profile/profile'
 
 
 class App extends Component {
 
 componentDidMount(){
   this.getPhoto();
+  this.getProfile();
 }
   state = {
-    image: []
+    image: [],
+    profile: []
   }
 
 
@@ -26,15 +29,17 @@ componentDidMount(){
       })
   }
 
-    // updatePhoto =()=>{
-    //   axios.post('/gallery')
-    //   .then((response)=>{
-    //     console.log('in POST', response);
- 
-    //   }).catch((err)=>{
-    //     console.log('POST', err);
-    //   })
-    // }
+  getProfile = () => {
+    axios.get('/gallery/profile')
+      .then((response) => {
+        console.log(response.data);
+        this.setState({
+          profile: response.data
+        })
+      }).catch((err) => {
+        console.log('Error in GET', err);
+      })
+  }
 
 
   clickedLikeButton = (id) => {
@@ -52,16 +57,21 @@ componentDidMount(){
 
 
   render() {
+    console.log(this.state.profile);
+    console.log(this.state.image);
+
+    
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Gallery of my life</h1>
         </header>
+        <Profile profilePicture={this.state.profile} />
         <br/>
         <p>Gallery goes here</p>
         {/* <img src="images/goat_small.jpg"/> */}
-        <GalleryList imageList={this.state.image}
-          buttonLikes={this.clickedLikeButton}/>
+       <GalleryList imageList={this.state.image}
+          buttonLikes={this.clickedLikeButton}/> 
       </div>
     );
   }

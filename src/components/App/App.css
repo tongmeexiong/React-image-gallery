@@ -31,7 +31,29 @@ img {
 .description {
  border-style: solid;
   text-align: center;
- width: 300px;
-  height: 300px;
+ width: 294px;
+  height: 298px;
+
 }
 
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 100px;
+}
+
+
+.imageChange {
+  margin: 50px
+}
+
+.descriptionChange{
+    margin: 50px
+
+}
+
+p.description {
+  background-color: slateblue;
+}
