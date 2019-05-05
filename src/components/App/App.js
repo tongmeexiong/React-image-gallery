@@ -45,6 +45,7 @@ componentDidMount(){
         console.log('Error in GET', err);
       })
   }
+  
 
 // This Function will send a PUT to the Server side to change our data in the database. 
   clickedLikeButton = (id) => { // pass id to know which data we are talking to specifically. 
