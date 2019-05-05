@@ -6,7 +6,7 @@ class GalleryListItem extends React.Component {
     state = {
         imageClicked: false
     }
-
+//  Function to change the image from false to true and back again. 
     handleClick = () => {
         this.setState({
             imageClicked: !this.state.imageClicked
@@ -16,6 +16,7 @@ class GalleryListItem extends React.Component {
     render() {
         console.log(this.state);
         let photoToChange;
+        // conditional to change image to description 
         if (this.state.imageClicked) {
             photoToChange = 
                 <div className= "descriptionChange">
